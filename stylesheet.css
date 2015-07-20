@@ -8,6 +8,7 @@
 table {
 	width: 100%;
 	height: 100%;
+	border: 2px solid #bfeeff;
 	/*border-collapse: collapse;*/
 }
 
@@ -15,7 +16,11 @@ td {
 	background-color: #bfeeff;
 }
 
-
+#options {
+	margin-top: 10px;
+	text-align: center;
+	font-family: Arial;
+}
 
 
 
