@@ -31,15 +31,17 @@ function createGrid(gridSize) {
 
 function hoverEffect() {
 	$(".column").hover(function() {
+		// var alpha = 0.4;
 		if (document.getElementById("default").checked == true) {
 			$(this).css("background-color", "#71d9ff");
 		} else if (document.getElementById("colors").checked == true){
 			$(this).css("background-color", randRGB());
 		} else {
-			var alpha = parseFloat($(this).css("opacity")) * 0.1;
-			$(this).css("background-color", "#71d9ff");
+			// $(this).css("background-color", "#71d9ff");
+			// $(this).css("opacity", alpha);
+			// alpha += 0.05;
+			var alpha = parseFloat($(this).css("opacity")) * 0.9;
 			$(this).css("opacity", alpha);
-			alpha += 0.1;
 		};
 	});
 };
